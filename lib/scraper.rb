@@ -14,7 +14,7 @@ class Scraper
     end
 
   def get_courses
-    self.page_page.css(".post")
+    self.get_page.css(".post")
   end
 
   def make_courses
@@ -42,4 +42,4 @@ class Scraper
 
 end
 
-Scraper.new.print_courses 
+Scraper.new.print_courses
